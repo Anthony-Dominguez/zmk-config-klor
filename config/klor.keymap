@@ -77,7 +77,7 @@
             key-positions = <36 14>;
         };
 
-        leftb {
+        leftd {
             bindings = <&kp LS(LEFT_BRACKET)>;
             key-positions = <15 36>;
         };
@@ -92,7 +92,7 @@
             key-positions = <36 26>;
         };
 
-        rightb {
+        rightd {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <36 27>;
         };
