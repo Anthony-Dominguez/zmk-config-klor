@@ -108,10 +108,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                    &kp N6                &kp N7     &kp N8       &kp N9                &kp N0
-&trans  &trans  &kp GRAVE  &kp LS(LPAR)  &kp LS(LBRC)  &kp LBKT                  &kp LS(LESS_THAN)     &kp EQUAL  &kp LS(DQT)  &kp NON_US_BACKSLASH  &trans  &trans
-&trans  &trans  &trans     &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT  &trans  &trans  &kp LS(GREATER_THAN)  &kp MINUS  &kp SQT      &trans                &trans  &trans
-                           &trans        &trans        &trans    &trans  &trans  &kp LSHFT             &trans     &trans
+        &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                    &kp N6            &kp N7     &kp N8       &kp N9                &kp N0
+&trans  &trans  &kp GRAVE  &kp LS(LPAR)  &kp LS(LBRC)  &kp LBKT                  &kp LESS_THAN     &kp EQUAL  &kp LS(DQT)  &kp NON_US_BACKSLASH  &trans  &trans
+&trans  &trans  &trans     &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT  &trans  &trans  &kp GREATER_THAN  &kp MINUS  &kp SQT      &trans                &trans  &trans
+                           &trans        &trans        &trans    &trans  &trans  &kp LSHFT         &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
