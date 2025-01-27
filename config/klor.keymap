@@ -47,6 +47,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        bsp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
@@ -71,10 +76,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &kp Q        &kp W           &kp E             &kp R               &kp T                      &kp Y           &kp U               &kp I             &kp O           &kp P
-&trans  &hm LMETA A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm F LEFT_CONTROL  &kp G                      &kp H           &hm LEFT_CONTROL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LMETA SEMICOLON  &trans
-&trans  &kp Z        &kp X           &kp C             &kp V               &kp B      &trans  &trans  &kp N           &kp M               &kp COMMA         &kp DOT         &kp FSLH             &trans
-                                     &lt 0 TAB         &kp SPACE           &kp ENTER  &trans  &trans  &kp LEFT_SHIFT  &lt 1 BACKSPACE     &trans
+        &kp Q        &kp W           &kp E             &kp R               &kp T                      &kp Y  &kp U               &kp I             &kp O           &kp P
+&trans  &hm LMETA A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm F LEFT_CONTROL  &kp G                      &kp H  &hm LEFT_CONTROL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LMETA SEMICOLON  &trans
+&trans  &kp Z        &kp X           &kp C             &kp V               &kp B      &trans  &trans  &kp N  &kp M               &kp COMMA         &kp DOT         &kp FSLH             &trans
+                                     &trans            &kp SPACE           &kp ENTER  &trans  &trans  &mo 1  &kp LEFT_SHIFT      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -100,10 +105,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-           &kp GRAVE  &kp N7  &kp N8         &kp N9     &kp ASTERISK                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp EXCLAMATION  &trans
-&kp RA(A)  &trans     &kp N4  &kp N5         &kp N6     &kp SLASH                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT     &kp PERCENT      &trans  &trans
-&trans     &trans     &kp N1  &kp N2         &kp N3     &kp PLUS        &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GT     &trans           &trans  &trans
-                              &mt PERIOD N0  &kp MINUS  &kp LEFT_SHIFT  &trans  &trans  &trans                &trans                 &trans
+           &kp GRAVE  &kp N7  &kp N8  &kp N9         &trans                          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp EXCLAMATION  &trans
+&kp RA(A)  &kp SLASH  &kp N4  &kp N5  &kp N6         &kp ASTERISK                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT     &kp PERCENT      &trans  &trans
+&trans     &kp MINUS  &kp N1  &kp N2  &kp N3         &kp PLUS        &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GT     &trans           &trans  &trans
+                              &trans  &mt PERIOD N0  &kp LEFT_SHIFT  &trans  &trans  &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
