@@ -33,7 +33,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        easy_boot {
+            bindings = <&bootloader>;
+            key-positions = <36 37 38 22>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
