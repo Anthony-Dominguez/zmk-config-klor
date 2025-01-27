@@ -71,7 +71,7 @@
             bindings = <
         &kp Q  &kp W       &kp E           &kp R               &kp T                      &kp Y  &kp U               &kp I           &kp O       &kp P
 &trans  &kp A  &hm LGUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G                      &kp H  &hm LEFT_CONTROL J  &hm LEFT_ALT K  &hm LGUI L  &kp SEMICOLON  &trans
-&trans  &kp Z  &kp X       &kp C           &kp V               &kp B      &trans  &trans  &kp N  &kp M               &kp COMMA       &kp DOT     &kp FSLH       &trans
+&trans  &kp Z  &kp X       &kp C           &kp V               &kp B      &trans  &mo 2   &kp N  &kp M               &kp COMMA       &kp DOT     &kp FSLH       &trans
                            &trans          &kp SPACE           &kp ENTER  &trans  &trans  &mo 1  &kp LEFT_SHIFT      &trans
             >;
 
@@ -105,6 +105,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_2 {
+            bindings = <
+        &trans  &trans    &kp UP    &trans     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
