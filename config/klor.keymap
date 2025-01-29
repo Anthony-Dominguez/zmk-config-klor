@@ -45,11 +45,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
-
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <37 42>;
-        };
     };
 
     keymap {
@@ -74,10 +69,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-        &kp Q  &kp W       &kp E           &kp R               &kp T                      &kp Y  &kp U               &kp I           &kp O       &kp P
-&trans  &kp A  &hm LGUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G                      &kp H  &hm LEFT_CONTROL J  &hm LEFT_ALT K  &hm LGUI L  &kp SEMICOLON  &trans
-&trans  &kp Z  &kp X       &kp C           &kp V               &kp B      &trans  &mo 2   &kp N  &kp M               &kp COMMA       &kp DOT     &kp FSLH       &trans
-                           &trans          &kp SPACE           &kp ENTER  &trans  &trans  &mo 1  &kp BACKSPACE       &trans
+        &kp Q  &kp W       &kp E           &kp R               &kp T                                 &kp Y  &kp U               &kp I           &kp O       &kp P
+&trans  &kp A  &hm LGUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G                                 &kp H  &hm LEFT_CONTROL J  &hm LEFT_ALT K  &hm LGUI L  &kp SEMICOLON  &trans
+&trans  &kp Z  &kp X       &kp C           &kp V               &kp B                 &trans  &mo 2   &kp N  &kp M               &kp COMMA       &kp DOT     &kp FSLH       &trans
+                           &trans          &kp SPACE           &hm LEFT_SHIFT ENTER  &trans  &trans  &mo 1  &kp BACKSPACE       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
