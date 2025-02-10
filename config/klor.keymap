@@ -20,6 +20,8 @@
 #define RAISE  2
 #define ADJUST 3
 
+&sk { release-after-ms = <3000>; };
+
 / {
     behaviors {
         hm: homerow_mods {
