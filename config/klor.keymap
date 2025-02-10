@@ -40,11 +40,6 @@
             bindings = <&bootloader>;
             key-positions = <36 37 38 23>;
         };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-        };
     };
 
     keymap {
